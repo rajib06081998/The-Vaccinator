@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Vacination App</title>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+      
+      <style>
+         body {
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaW9xnuYmIPcwLUzhUAgOgH40dnZJKnfoOvti9g1P7_flWrm4L");
+            background-position: center;
+            background-size: cover;
+         }
+
+         #ui {
+            background: linear-gradient(to bottom, rgba(247, 240, 240, 0.2), rgba(253, 249, 249, 0.2));
+         }
+
+         #input {
+            background: linear-gradient(to bottom, rgba(247, 240, 240, 0.6), rgba(253, 249, 249, 0.6));
+         }
+      </style>
+	</head>
+	<body>
+      <div class="ui stackable inverted menu">
+			<div class="item">
+				<i class="stethoscope icon"></i>
+			</div>
+			<a class="item" href="/">HOME</a>
+			<a class="item" href="/signup">SIGN UP</a>
+			<a class="item" href="/login">SIGN IN</a>
+		  </div>
+	<div class="ui container segment" id="ui" style="margin-top:100px;">
+		<div class="ui huge header">
+			Register
+		</div>
+		<form class="ui form" action="/idgenerate" method="POST">
+			<div>
+            <label>Hospital :</label>
+                <select id="input" name="vacc[info.hospital]">
+                    <option selected>Select Hospital</option>
+                    <option>Green-view Hospital </option>
+                    <option>Green-Hills Hospital</option>
+                    <option>GraceWell Hospitals</option>
+                    <option>Medi-land </option>
+                  </select>
+            </div>
+            <div>
+            <label>Father's Name :</label><br>
+            <input id="input" type="text" name="vacc[info.father]" required>
+            </div>
+            <div>
+                <label>Mother's Name :</label><br>
+                <input id="input" type="text" name="vacc[info.mother]" required>
+                </div>
+             <div>
+                <label>Phone Number :</label><br>
+                <input id="input" type="text" name="vacc[info.phone]" required>
+            </div>
+            <div>
+                <label>DOB :</label><br>
+                <input id="input" id="input" type="date" name="vacc[info.DOB]" required>
+             </div>
+
+             <div>
+                <label>Address :</label><br>
+                <input id="input" type="text" name="vacc[info.address]" required>
+             </div>
+
+             <div >
+                <label>E-mail :</label><br>
+                <input id="input" type="email" name="vacc[info.email]" required>
+             </div>
+             <div>
+                <label>District :</label>
+                <select id="input" name="vacc[info.district]">
+                  <option selected>Select District</option>
+                  <option>Cachar </option>
+                  <option>Kamrup</option>
+                  <option>Hailakandi</option>
+                  <option>Karimganj</option>
+                </select>
+             </div>
+             <div style="margin-top: 20px;">
+               <input class="ui green basic button big" type="submit">
+             </div>
+			
+		</form>
+	</div>
+	</body>
+</html>

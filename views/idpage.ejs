@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Vacination App</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+		<style>
+			body {
+			   background: url("https://sole.hsc.wvu.edu/Apps/News/story/wvu-health-sciences-to-host-nationally-recognized-speakers-for-global-health-week_0/thumb/1200/medium");
+			   background-position: center;
+			   background-size: cover;
+			}
+   
+			#input {
+			   background: linear-gradient(to bottom, rgba(247, 240, 240, 0.3), rgba(253, 249, 249, 0.3));
+			}
+
+			 #items {
+				font-size: 40px;
+			}
+		 </style>
+	</head>
+	<body>
+		<div class="ui stackable inverted menu">
+			<div class="item">
+				<i class="stethoscope icon"></i>
+			</div>
+			<a class="item" href="/">HOME</a>
+			<a class="item" href="/signup">SIGN UP</a>
+			<a class="item" href="/login">SIGN IN</a>
+		  </div>
+		
+		
+          
+        <div class="ui main text container" id="input">
+            <div class="ui top attached segment"id="input" style="margin-top:100px; height: 200px; justify-content: center; align-items: center;">
+                <div class="ui divided items"id="input" style="justify-content: center; align-items: center; text-align: center;">
+                    <h1 id="items">Your Login ID :</h1>
+                </div>
+
+                <div class="ui divided items"id="input" style="justify-content: center; align-items: center; text-align: center;">
+                    <%   for(var i = vaccs.length - 1; i>vaccs.length - 2; i--){%>
+					  <a id="items" href="/login/details/<%= vaccs[i]._id %>" >  <%= vaccs[i]._id %> </a>
+                      <% } %> 
+                </div>
+            </div>
+        </div>

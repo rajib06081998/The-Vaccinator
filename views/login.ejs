@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Vacination App</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+		<style>
+			body {
+			   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRgUBNXGcO3iW-xs4L_larRNOnYOupxAItHvDlEEcZepgjl7mmU");
+			   background-repeat: no-repeat; 
+				background-attachment: fixed;
+				background-size: cover;
+			}
+   
+			#ui {
+			   background: linear-gradient(to bottom, rgba(247, 240, 240, 0.3), rgba(253, 249, 249, 0.3));
+			   font-size: 16px;
+			}
+   
+			#input {
+			   background: linear-gradient(to bottom, rgba(247, 240, 240, 0.6), rgba(253, 249, 249, 0.6));
+			}
+		 </style>
+	</head>
+	<body>
+		<div class="ui stackable inverted menu">
+			<div class="item">
+				<i class="stethoscope icon"></i>
+			</div>
+			<a class="item" href="/">HOME</a>
+			<a class="item" href="/signup">SIGN UP</a>
+			<a class="item" href="/login">SIGN IN</a>
+		  </div>
+		
+	<div class="ui main text container" id="ui">
+	<div class="ui top attached segment"  id="ui" style="margin-top:50px;">
+		<div class="ui divided items">
+		  <form class="ui form" action="/login/details" method="POST">
+			<h2 class="ui dividing header">Sign In</h2>
+			<div class="field">
+			  <label>User Id :</label>
+			  <input type="text" id="input" name="id" required>
+			</div>
+			<div class="field">
+			  <label>Phone-Number :</label>
+			  <input type="text" id="input" name="phone" required>
+			</div>
+			<button class="ui black basic button" type="submit">Submit</button>
+		  </form>
+		</div>
+	</div>
+</div>
+	</body>
+</html>
